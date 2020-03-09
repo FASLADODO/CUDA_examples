@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Devtools\CUDA_by_hand\square\src\square.cu">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Devtools\CUDA_by_hand\square\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Object Include="C:\Devtools\CUDA_by_hand\square\build\CMakeFiles\square.dir\src\$(Configuration)\square_generated_square.cu.obj">
+      <Filter>Object Files</Filter>
+    </Object>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Object Files">
+      <UniqueIdentifier>{37555A86-E53A-3BC6-836A-AC2DCABCD8CC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{6043AF13-D2C8-3B6E-94ED-A6B32680DAB1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
