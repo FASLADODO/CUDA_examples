@@ -7,7 +7,7 @@
 
 cmake_minimum_required(VERSION 2.6 FATAL_ERROR)
 project(cs344)
-
+set(OpenCV_DIR "C:/Devtools/cv/opencv/build")
 find_package(OpenCV REQUIRED)
 find_package(CUDA REQUIRED)
 

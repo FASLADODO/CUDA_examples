@@ -3,12 +3,11 @@
 
 #include <iostream>
 #include <iomanip>
-#include <algorithm>
 #include <cuda.h>
 #include <cuda_runtime.h>
 #include <cuda_runtime_api.h>
 #include <cassert>
-#include <cmath>
+#include <algorithm>
 
 #define checkCudaErrors(val) check( (val), #val, __FILE__, __LINE__)
 

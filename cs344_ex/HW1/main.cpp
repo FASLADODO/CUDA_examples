@@ -17,7 +17,6 @@ void your_rgba_to_greyscale(const uchar4 * const h_rgbaImage,
 #include "HW1.cpp"
 
 int main(int argc, char **argv) {
-  std::cout << "Start" << std::endl ;
   uchar4        *h_rgbaImage, *d_rgbaImage;
   unsigned char *h_greyImage, *d_greyImage;
 
@@ -30,19 +29,16 @@ int main(int argc, char **argv) {
   switch (argc)
   {
 	case 2:
-    std::cout << "Entered case 2 : " << argv[1] << std::endl ;
 	  input_file = std::string(argv[1]);
 	  output_file = "HW1_output.png";
 	  reference_file = "HW1_reference.png";
 	  break;
 	case 3:
-  std::cout << "Entered case 3 : " << argv[1] << std::endl ;
 	  input_file  = std::string(argv[1]);
       output_file = std::string(argv[2]);
 	  reference_file = "HW1_reference.png";
 	  break;
 	case 4:
-  std::cout << "Entered case 4 : " << argv[1] << std::endl ;
 	  input_file  = std::string(argv[1]);
       output_file = std::string(argv[2]);
 	  reference_file = std::string(argv[3]);

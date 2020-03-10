@@ -4,13 +4,14 @@
 # <author>  Quan Tran Minh. edit by Johannes Kast, Michael Sarahan </author>
 # <email>   quantm@unist.ac.kr  kast.jo@googlemail.com msarahan@gmail.com</email>
 ############################################################################
-# set(CMAKE_CUDA_COMPILER "C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.0/bin/nvcc.exe")
-cmake_minimum_required(VERSION 3.14)
-# project(HW2_CUDA LANGUAGES CXX CUDA)
-# collect source files
+# minimum required cmake version
+cmake_minimum_required(VERSION 2.8)
+find_package(CUDA QUIET REQUIRED)
+
+SET (compare_files compare.cpp)
 
 file( GLOB  hdr *.hpp *.h )
 file( GLOB  cu  *.cu)
-SET (HW2_files main.cpp reference_calc.cpp compare.cpp)
+SET (HW3_files main.cpp loadSaveImage.cpp reference_calc.cpp compare.cpp)
     
-ADD_EXECUTABLE(HW2 ${HW2_files} ${hdr} ${cu})
+CUDA_ADD_EXECUTABLE(HW3 ${HW3_files} ${hdr} ${cu})
